@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
-const recipeSchema=mongoose.Schema({
+const recipeSchema= new mongoose.Schema({
     title:{
         type:String,
         required: true
     },
       ingredients:{
-        type:String,
+        type:Array,
         required: true
     },
       instructions:{
@@ -18,6 +18,10 @@ const recipeSchema=mongoose.Schema({
     },
      coverImage: {
         type:String,
+    },
+    createdBy:{
+      type:mongoose.Schema.Types.ObjectId,
+      ref:"User"
     }
 },{timestamps:true})
 

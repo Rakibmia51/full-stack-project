@@ -1,13 +1,17 @@
 ## Food Recipe MERN Project
 
 ### 1st work - backend 
--   Server setup (npm install - express, nodemon, dotenv, cors)
+-   Server setup (npm install - express, nodemon, dotenv, cors, bcrypt, jsonwebtoken, npm i multer)
 -   Routes
 -   Controllers
 -   Config
     - Database - connection (npm i mongoose)
 -   Controllers (GET,POST,PUR, DELETE)
 -   Models (Schema, Model)
+-  Work Folder
+    - models (recipe, user)
+    - routes (recipe, user)
+    - controlers(recipe, user)
 
 ### 2nd work - frontend
 
