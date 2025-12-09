@@ -48,7 +48,7 @@ export default function EditRecipe() {
   });
 
   try {
-    await axios.put(`http://localhost:5000/recipe/${id}`, formData, {
+    await axios.put(`https://full-stack-project-axar.onrender.com/recipe/${id}`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         "authorization": `Bearer ${localStorage.getItem("token")}`
