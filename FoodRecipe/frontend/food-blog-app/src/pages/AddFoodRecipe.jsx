@@ -27,7 +27,7 @@ export default function AddFoodRecipe() {
   });
 
   try {
-    await axios.post("http://localhost:5000/recipe", formData, {
+    await axios.post("https://full-stack-project-axar.onrender.com/recipe", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         "authorization": `Bearer ${localStorage.getItem("token")}`
