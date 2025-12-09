@@ -1,0 +1,52 @@
+# Node modules (backend + frontend)
+backend/node_modules/
+frontend/node_modules/
+
+# Environment files
+backend/.env
+frontend/.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+*.log
+
+# Build outputs
+backend/dist/
+frontend/dist/
+frontend/build/
+
+# Editor folders
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Cache folders
+backend/.cache/
+frontend/.cache/
+frontend/.vite/
+frontend/.next/
+
+# Temp files
+tmp/
+temp/
+
+# Upload folders
+backend/public/uploads/
+backend/public/images/
+
+# cPanel Node environment
+nodevenv/
+venv/
+pids/
+pmlogs/
+
+# PM2 logs (if used)
+.pids/
+logs/

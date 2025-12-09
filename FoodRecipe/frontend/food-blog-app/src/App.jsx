@@ -10,7 +10,7 @@ import EditRecipe from './pages/EditRecipe'
 
 const getAllRecipes = async()=>{
   let getAllRecipes=[]
-  await axios.get("http://localhost:5000/recipe").then(res=>{
+  await axios.get("https://full-stack-project-axar.onrender.com/recipe").then(res=>{
     getAllRecipes=res.data
   })
   return getAllRecipes

@@ -20,7 +20,7 @@ export default function RecipeItem() {
     },[recipes])
 
     const onDelete= async(id)=>{
-        await axios.delete(`http://localhost:5000/recipe/${id}`)
+        await axios.delete(`https://full-stack-project-axar.onrender.com/recipe/${id}`)
             .then((res)=>console.log(res))
             setAllRecipes(recipes=>recipes.filter(recipe=>recipe._id !==id))
 
@@ -41,7 +41,7 @@ export default function RecipeItem() {
                 getAllRecipes?.map((item, index)=>{
                     return (
                         <div key={index} className='card'>
-                            <img src={`http://localhost:5000/images/${item.coverImage}`} width="120px" height="100px"></img>
+                            <img src={`https://full-stack-project-axar.onrender.com/images/${item.coverImage}`} width="120px" height="100px"></img>
                             <div className='card-body'>
                                 <div className='title'>{item.title}</div>
                                 <div className='icons'>
