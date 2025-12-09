@@ -12,7 +12,7 @@ export default function InputForm({ setIsOpen }) {
         let endpoint = isSignUp ? "signUp" : "login"
 
         try {
-            const res = await axios.post(`http://localhost:5000/${endpoint}`, {
+            const res = await axios.post(`https://full-stack-project-axar.onrender.com/${endpoint}`, {
                 email,
                 password
             })
