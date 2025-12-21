@@ -26,7 +26,7 @@ export default function() {
   return (
     <>
         <header>
-            <h2>Food Blog</h2>
+          <h2>Food Blog</h2>
             <ul>
                 <li><NavLink to="/">Home</NavLink></li>
                 <li onClick={()=>isLogin && setIsOpen(true)}><NavLink to={!isLogin ? "/myRecipe" : "/"}>My Recipe</NavLink></li>
